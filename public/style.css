@@ -1,3 +1,18 @@
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	height: 100%;
+  width: 100%;
+	margin: 0;
+	text-align: center;
+	padding: 0;
+  
+}
+
 h1 {
 	font-size: 32px;
   font-family: 'Quicksand', 'Palatino Linotype', serif;
@@ -20,6 +35,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {color: #f36c30;
+a:hover {color: #5aa86c;
   text-decoration: none;
 }
