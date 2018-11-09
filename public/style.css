@@ -1,0 +1,25 @@
+h1 {
+	font-size: 32px;
+  font-family: 'Quicksand', 'Palatino Linotype', serif;
+  color: #000;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+p {
+  font-size: 18px;
+  font-family: 'Quicksand', 'Palatino Linotype', serif;
+  color: #000;
+  letter-spacing: 2px;
+  font-weight: 800;
+
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {color: #f36c30;
+  text-decoration: none;
+}

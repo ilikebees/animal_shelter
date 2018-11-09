@@ -61,6 +61,18 @@ class Animal
     SqlRunner.run( sql )
   end
 
+  def self.find(id)
+    sql = "SELECT * FROM animals
+    WHERE id = $1"
+    values = [id]
+    result = SqlRunner.run(sql, values).first
+    student = Animal.new(result)
+    return animal
+  end
+
+  def format_name
+    return "#{@name.capitalize}"
+  end
 
 
 end

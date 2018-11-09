@@ -63,6 +63,19 @@ class Owner
     SqlRunner.run( sql )
   end
 
+  def self.find(id)
+    sql = "SELECT * FROM owners
+    WHERE id = $1"
+    values = [id]
+    result = SqlRunner.run(sql, values).first
+    owner = Owner.new(result)
+    return owner
+  end
+
+  def format_name
+    return "#{@first_name.capitalize} #{@last_name.capitalize}"
+  end
+
 
 
 
