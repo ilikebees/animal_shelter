@@ -66,7 +66,7 @@ class Animal
     WHERE id = $1"
     values = [id]
     result = SqlRunner.run(sql, values).first
-    student = Animal.new(result)
+    animal = Animal.new(result)
     return animal
   end
 
