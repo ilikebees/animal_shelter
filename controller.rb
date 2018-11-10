@@ -9,10 +9,7 @@ get '/animals' do
   erb(:index)
 end
 
-# get '/owners' do
-#   @owners = Owner.all
-#   erb(:index)
-# end
+
 
 get '/home' do
   erb(:home)

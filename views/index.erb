@@ -1,11 +1,7 @@
-<p>Animals</p>
 
+<% @animals.each do |animal| %>
 
-  <% @animals.each do |animal| %>
+  <p><a href="/animals/<%= animal.id %>"><%= animal.format_name %></a></p>
+  <p>Name: <%= animal.name %></p>
 
-
-    <p><a href="/animals/<%= animal.id %>"><%= animal.format_name %></a></p>
-    <p>Name: <%= animal.name %></p>
-
-
-  <% end %>
+<% end %>
