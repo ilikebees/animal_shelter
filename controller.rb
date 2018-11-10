@@ -30,6 +30,10 @@ post '/animals' do
 end
 
 #EDIT
+get '/animals/:id/edit' do
+  @animals = Animal.find(params[:id])
+  erb(:edit)
+end
 
 
 
