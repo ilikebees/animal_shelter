@@ -4,9 +4,9 @@
     <div class="content">
 <% @adoptions.each do |adoption| %>
 
-
+  
   <p>Animal: <%= adoption.animal.name %></p>
-  <p>Adoptee: <%= adoption.owner.first_name %><%= adoption.owner.last_name %></p>
+  <p>Adopted by: <%= adoption.owner.first_name %> <%= adoption.owner.last_name %></p>
 
 
 <% end %>
