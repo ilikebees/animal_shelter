@@ -1,0 +1,16 @@
+
+
+<div id="banner">
+    <div class="content">
+<% @adoptions.each do |adoption| %>
+
+
+  <p>Animal: <%= adoption.animal.name %></p>
+  <p>Adoptee: <%= adoption.owner.first_name %><%= adoption.owner.last_name %></p>
+
+
+<% end %>
+
+<p><a href='/adoptions/new'>Add Adoption</a></p>
+</div>
+</div>
