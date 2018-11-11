@@ -1,1 +1,11 @@
-<p>blah</p>
+
+<form action="/animals/<%= @animals.id %>" method="post">
+
+  <label for="name"><p>Name:</p></label>
+  <input id="name" type="text" name="name" value="<%= @animals.name %>">
+
+
+
+  <input type="submit" value="Edit Animal">
+
+</form>

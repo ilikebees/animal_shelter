@@ -3,20 +3,31 @@
 <head>
   <title>Animal Shelter</title>
   <link rel="stylesheet" type="text/css" href="/style.css"/>
-
-  <link rel="shortcut icon" type="image/png" href="favicon.png"/>
-
+  <link rel="shortcut icon" type="image/png" href="/images/favicon.png"/>
   <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400" rel="stylesheet">
 
 </head>
 
 <body>
-  <nav id="menu">
-    <p><a href='/animals'>Animals</a></p>
-    <p><a href='/owners'>Owners</a></p>
-    <p><a href='/adoptions'>Adoptions</a></p>
-  </nav>
-  <h1><a href='/home'>Animal Shelter</a></h1>
-  <%= yield %>
+  <header>
+    <div class="header"
+      <nav id="menu">
 
+    <h1><a href='/home'>Animal Shelter</a></h1>
+
+
+       <li><a href='/adoptions'>Adoptions</a></li>
+       <li><a href='/animals'>Animals</a></li>
+       <li><a href='/owners'>Owners</a></li>
+    
+  </nav>
+
+  <%= yield %>
+</div>
+</header>
 </body>
+
+
+<div class="footer">
+  <p>&copy; Laura Manson 2018</p>
+</div>

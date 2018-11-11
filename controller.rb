@@ -34,8 +34,6 @@ get '/animals/:id/edit' do
   erb(:edit)
 end
 
-
-
 #UPDATE
 post '/animals/:id' do
   animal = Animal.new( params )
