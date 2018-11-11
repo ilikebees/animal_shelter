@@ -1,33 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Animal Shelter</title>
+  <title>The Animal Shelter</title>
   <link rel="stylesheet" type="text/css" href="/style.css"/>
-  <link rel="shortcut icon" type="image/png" href="/images/favicon.png"/>
+  <link rel="shortcut icon" type="image/png" href="/images/animal_shelter.png"/>
   <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400" rel="stylesheet">
 
 </head>
 
 <body>
-  <header>
-    <div class="header"
-      <nav id="menu">
-
-    <h1><a href='/home'>Animal Shelter</a></h1>
 
 
-       <li><a href='/adoptions'>Adoptions</a></li>
-       <li><a href='/animals'>Animals</a></li>
-       <li><a href='/owners'>Owners</a></li>
-    
-  </nav>
+<header>
+<div class="header">
+<h1><a href="/home">The Animal Shelter<a></h1>
+</div>
 
-  <%= yield %>
+<nav>
+  <div>
+  <ul>
+    <li><a href="/adoptions">Adoptions</a></li>
+    <li><a href="/animals">Animals</a></li>
+    <li><a href="/owners">Owners</a></li>
+
+  </ul>
+</nav>
 </div>
 </header>
+
+
+<!-- <div id="wrapper">
+    <p></p>
+</div> -->
+
+
+
+
+
+
+<%= yield %>
 </body>
 
 
 <div class="footer">
-  <p>&copy; Laura Manson 2018</p>
+  <h2>&copy; Laura Manson 2018</h2>
 </div>

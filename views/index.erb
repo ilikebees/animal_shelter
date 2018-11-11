@@ -1,4 +1,7 @@
+<div id="banner">
+    <div class="content">
 
+      
 <% @animals.each do |animal| %>
 
   <p><a href="/animals/<%= animal.id %>"><%= animal.format_name %></a></p>
@@ -7,3 +10,5 @@
 <% end %>
 
 <p><a href='/animals/new'>Add Animal</a></p>
+</div>
+</div>
