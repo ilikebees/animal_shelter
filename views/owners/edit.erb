@@ -1,0 +1,17 @@
+<div id="banner">
+    <div class="content">
+
+<form action="/owners/<%= @owners.id %>" method="post">
+
+  <label for="first_name"><p>First Name:</p></label>
+  <input id="first_name" type="text" name="first_name" value="<%= @owners.first_name %>">
+  <label for="last_name"><p>Last Name:</p></label>
+  <input id="last_name" type="text" name="last_name" value="<%= @owners.last_name %>">
+
+
+
+  <input type="submit" value="Edit Owner">
+
+</form>
+</div>
+</div>

@@ -1,8 +1,10 @@
 require_relative('../models/animal')
 require_relative('../models/owner')
+require_relative('../models/adoption')
 
 Animal.delete_all()
 Owner.delete_all()
+Adoption.delete_all()
 
 animal1 = Animal.new({'name' => 'Myrtle'})
 animal2 = Animal.new({'name' => 'Mildred'})
@@ -23,5 +25,12 @@ owner1.save
 owner2.save
 owner3.save
 owner4.save
+
+adoption1 = Adoption.new({'animal_id' => animal3.id, 'owner_id' => owner2.id})
+adoption2 = Adoption.new({'animal_id' => animal1.id, 'owner_id' => owner4.id})
+
+adoption1.save
+adoption2.save
+
 
 # animal1.delete

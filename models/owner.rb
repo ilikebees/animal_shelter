@@ -28,8 +28,8 @@ class Owner
 
   def self.all()
     sql = "SELECT * FROM owners"
-    house_data = SqlRunner.run(sql)
-    houses = map_items(owner_data)
+    owner_data = SqlRunner.run(sql)
+    owners = map_items(owner_data)
     return owners
   end
 

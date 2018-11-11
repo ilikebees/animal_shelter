@@ -1,0 +1,13 @@
+<div id="banner">
+    <div class="content">
+<% @owners.each do |owner| %>
+
+  <p><a href="/owners/<%= owner.id %>"><%= owner.format_name %></a></p>
+  <p>First Name: <%= owner.first_name %></p>
+  <p>Last Name: <%= owner.last_name %></p>
+
+<% end %>
+
+<p><a href='/owners/new'>Add Owner</a></p>
+</div>
+</div>
