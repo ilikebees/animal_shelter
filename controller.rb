@@ -5,7 +5,6 @@ require_relative('models/owner')
 also_reload('./models/*')
 
 #INDEX
-
 get '/animals' do
   @animals = Animal.all
   erb(:index)
@@ -22,7 +21,7 @@ get '/animals/:id' do
   @animal = Animal.find(params[:id])
   erb(:show)
 end
-#
+
 #CREATE
 post '/animals' do
   Animal.new( params ).save
