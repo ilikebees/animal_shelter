@@ -2,9 +2,10 @@ require_relative('../models/animal')
 require_relative('../models/owner')
 require_relative('../models/adoption')
 
+Adoption.delete_all()
 Animal.delete_all()
 Owner.delete_all()
-Adoption.delete_all()
+
 
 animal1 = Animal.new({'name' => 'Myrtle'})
 animal2 = Animal.new({'name' => 'Mildred'})
