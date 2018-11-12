@@ -7,10 +7,10 @@ Animal.delete_all()
 Owner.delete_all()
 
 
-animal1 = Animal.new({'name' => 'Myrtle', 'admission_date' => '01/04/2018', 'age' => '5', 'sex' => 'female', 'image_path' => '/images/box_template.png'})
-animal2 = Animal.new({'name' => 'Mildred', 'admission_date' => '11/07/2018', 'age' => '12', 'sex' => 'female', 'image_path' => '/images/box_template2.png'})
-animal3 = Animal.new({'name' => 'Montgomery', 'admission_date' => '03/05/2018', 'age' => '1', 'sex' => 'male', 'image_path' => '/images/box_template.png'})
-animal4 = Animal.new({'name' => 'Maeve', 'admission_date' => '23/06/2018', 'age' => '8', 'sex' => 'female', 'image_path' => '/images/box_template2.png'})
+animal1 = Animal.new({'name' => 'Myrtle', 'admission_date' => '01/04/2018', 'age' => '5', 'sex' => 'female', 'image_path' => '/images/dog1.png'})
+animal2 = Animal.new({'name' => 'Mildred', 'admission_date' => '11/07/2018', 'age' => '12', 'sex' => 'female', 'image_path' => '/images/dog2.png'})
+animal3 = Animal.new({'name' => 'Montgomery', 'admission_date' => '03/05/2018', 'age' => '1', 'sex' => 'male', 'image_path' => '/images/cat.png'})
+animal4 = Animal.new({'name' => 'Maeve', 'admission_date' => '23/06/2018', 'age' => '8', 'sex' => 'female', 'image_path' => '/images/dog3.png'})
 
 animal1.save
 animal2.save
