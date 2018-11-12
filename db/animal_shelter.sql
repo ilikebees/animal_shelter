@@ -8,7 +8,8 @@ CREATE TABLE animals (
   name VARCHAR(255),
   admission_date VARCHAR(255),
   age VARCHAR(255),
-  sex VARCHAR(255)
+  sex VARCHAR(255),
+  image_path VARCHAR(255)
 
 
 );

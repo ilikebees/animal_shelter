@@ -2,14 +2,25 @@
 
 <div id="banner">
     <div class="content">
+
+<table>
+  <tr>
+  <th><p>Animal</p></th>
+  <th><p>Adopted by</p></th>
+  <th><p>Adoption date</p></th>
+
 <% @adoptions.each do |adoption| %>
 
+  <tr>
 
-  <p>Animal: <%= adoption.animal.name %></p>
-  <p>Adopted by: <%= adoption.owner.first_name %> <%= adoption.owner.last_name %></p>
-  <p>Adoption date: <%= adoption.adoption_date %></p>
+
+  <td><p><%= adoption.animal.name %></p></td>
+  <td><p><%= adoption.owner.first_name %> <%= adoption.owner.last_name %></p></td>
+  <td><p><%= adoption.adoption_date %></p></td>
+  <td><p><a href="/adoptions/<%= adoption.id %>">Details</a></p></td>
 
 <% end %>
+</table>
 
 <p><a href='/adoptions/new'>Add Adoption</a></p>
 </div>

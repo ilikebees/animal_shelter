@@ -1,12 +1,24 @@
 <div id="banner">
     <div class="content">
-<% @owners.each do |owner| %>
 
-  <p><a href="/owners/<%= owner.id %>"><%= owner.format_name %></a></p>
-  <p>First Name: <%= owner.first_name %></p>
-  <p>Last Name: <%= owner.last_name %></p>
-  <p>Contact: <%= owner.contact_no %></p>
+<table>
+  <tr>
+     <th><p>First Name</p></th>
+     <th><p>Last Name</p></th>
+     <th><p>Contact</p></th>
+
+  </tr>
+
+<% @owners.each do |owner| %>
+  <tr>
+
+  <td><p> <%= owner.first_name %></p></td>
+  <td><p><%= owner.last_name %></p></td>
+  <td><p><%= owner.contact_no %></p></td>
+  <td><p><a href="/owners/<%= owner.id %>">Details</a></p></td>
+</tr>
 <% end %>
+</table>
 
 
 

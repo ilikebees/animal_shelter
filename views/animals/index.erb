@@ -1,9 +1,12 @@
 <div id="banner">
     <div class="content">
+
+      <p><a href='/animals/new'>Add Animal</a></p>
 <% @animals.each do |animal| %>
 
+   <img src="<%= animal.image_path %>" alt="animal">
   <p><a href="/animals/<%= animal.id %>"><%= animal.format_name %></a></p>
-  <p>Name: <%= animal.name %></p>
+
   <p>Admission Date: <%= animal.admission_date %></p>
   <p>Age: <%= animal.age %></p>
   <p>Sex: <%= animal.sex %></p>
@@ -12,6 +15,6 @@
 
 <% end %>
 
-<p><a href='/animals/new'>Add Animal</a></p>
+
 </div>
 </div>

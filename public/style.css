@@ -10,7 +10,11 @@ body {
 	margin: 0;
 	text-align: center;
   background-color: #93c7ce;
-
+  padding: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 
@@ -99,6 +103,18 @@ a:hover {color: #5aa86c;
     padding-top: 10px;
     margin:  auto;
 
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 2px
+    solid black;
+    text-align: center;
+    width: 800px;
+    align-self: center;
 }
 
 
