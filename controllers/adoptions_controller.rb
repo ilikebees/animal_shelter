@@ -15,7 +15,7 @@ end
 #NEW
 get '/adoptions/new' do
   @animals = Animal.all
-  @owners = Owner.all 
+  @owners = Owner.all
 
   erb(:"adoptions/new")
 end
@@ -28,9 +28,17 @@ end
 
 #CREATE
 post '/adoptions' do
-  Adoption.new( params ).save
+    # if animal adopted set animal's adoptable attribute to false
+        id = params['animal_id'].to_i
+        animal = Animal.find(id)
+        #binding.pry
+        animal.adoptable = 'f'
+        animal.update
+    # save the new adoption
+    Adoption.new( params ).save
   redirect to '/adoptions'
 end
+
 
 #EDIT
 get '/adoptions/:id/edit' do
