@@ -57,7 +57,7 @@ class Animal
       $1, $2, $3, $4, $5
     )
     WHERE id = $6"
-    values = [@name, @admission_date, @age, @sex, @image_path]
+    values = [@name, @admission_date, @age, @sex, @image_path, @id]
     SqlRunner.run(sql, values)
   end
 

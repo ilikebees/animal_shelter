@@ -1,0 +1,40 @@
+<!-- views/adoptions/new.erb -->
+
+<div id="banner">
+
+    <div class="content">
+
+        <h1>New Adoptions</h1>
+
+        <br>  <!-- line break -->
+
+        <form action="/adoptions" method="post">
+
+            <label>
+                <p>Select an animal:</p>
+                <select name="animal_id">
+                    <% for animal in @animals %>
+                    <option value="<%= animal.id %>"><%= animal.name %></option>
+                    <% end %>
+                </select>
+            </label>
+
+            <label>
+                <p>Select an owner:</p>
+                <select name="owner_id">
+                    <% for owner in @owners %>
+                    <option value="<%= owner.id %>"><%= owner.first_name %> <%= owner.last_name %></option>
+                    <% end %>
+                </select>
+            </label>
+
+            <p><label for="adoption_date">Adoption date:</label></p>
+            <input id="adoption_date" type="text" name="adoption_date">
+
+            <p><input type='submit' value="Add Adoption"></p>
+
+        </form>
+
+    </div>
+
+</div>

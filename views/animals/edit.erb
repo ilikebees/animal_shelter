@@ -1,5 +1,10 @@
+
+
+
 <div id="banner">
     <div class="content">
+
+      <h1>Edit Animal</h1>
 
 <form action="/animals/<%= @animals.id %>" method="post">
 
@@ -11,8 +16,11 @@
   <input id="age" type="text" name="age" value="<%= @animals.age %>">
   <label for="sex"><p>Sex:</p></label>
   <input id="sex" type="text" name="sex" value="<%= @animals.sex %>">
+  <label for="image_path"><p>image path:</p></label>
+  <input id="image_path" type="text" name="image_path" value="<%= @animals.image_path %>">
 
-  <input type="submit" value="Edit Animal">
+
+  <input type="submit" value="Save">
 
 </form>
 </div>
