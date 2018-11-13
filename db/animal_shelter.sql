@@ -9,6 +9,8 @@ CREATE TABLE animals (
   admission_date VARCHAR(255),
   age VARCHAR(255),
   sex VARCHAR(255),
+  breed VARCHAR(255),
+  adoptable BOOLEAN,
   image_path VARCHAR(255)
 
 
