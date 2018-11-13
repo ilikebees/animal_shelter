@@ -1,12 +1,14 @@
 
-
+<!-- Animal index -->
 
 
 
 <div id="banner">
     <div class="content">
-
       <p><a href='/animals/new'>Add Animal</a></p>
+      <!-- <div class="container"> -->
+
+
 <% @animals.each do |animal| %>
 
    <img src="<%= animal.image_path %>" alt="animal">
@@ -20,6 +22,6 @@
 
 <% end %>
 
-
+<!-- </div> -->
 </div>
 </div>
