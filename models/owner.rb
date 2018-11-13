@@ -49,7 +49,7 @@ class Owner
       $1, $2, $3
     )
     WHERE id = $4"
-    values = [@first_name, @last_name, @contact_no]
+    values = [@first_name, @last_name, @contact_no, @id]
     SqlRunner.run(sql, values)
   end
 
