@@ -4,7 +4,26 @@
 <div id="banner">
     <div class="content">
 
-      <h1>Edit Animal</h1>
+      <br>
+      <br>
+      <br>
+
+
+      <div class="title">
+        Edit Animal
+
+      </div>
+      <br>
+      <div class="right">
+      <a href='/animals/new'>Add Animal</a>
+      </div>
+
+
+      <br>
+      <hr>
+      <br>
+
+
 
 <form action="/animals/<%= @animals.id %>" method="post">
 
@@ -19,7 +38,7 @@
 
   <label for="sex"><p>Sex:</p></label>
   <input id="sex" type="text" name="sex" value="<%= @animals.sex %>">
-  
+
   <label for="image_path"><p>image path:</p></label>
   <input id="image_path" type="text" name="image_path" value="<%= @animals.image_path %>">
 
@@ -27,5 +46,9 @@
   <input type="submit" value="Save">
 
 </form>
+
+
+
+
 </div>
 </div>

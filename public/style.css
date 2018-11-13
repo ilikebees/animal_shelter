@@ -21,7 +21,7 @@ body {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-image: url("/images/gif.gif");
+  background-image: url("/images/catdog.gif");
 
 
 }
@@ -121,7 +121,7 @@ table, th, td {
     border: 2px
     solid black;
     text-align: center;
-    width: 1000px;
+    width: 1050px;
     align-self: center;
 }
 
@@ -165,37 +165,50 @@ table, th, td {
 .inner_flex {
 
   width: 30%;
-  height: 60%;
+  height: 100%;
   text-align: left;
   background-color: white;
   width: 330px;
-  margin: 5px;
+
+  margin: 10px;
 
 
 }
 
 .inner_flex p {
 
-  padding-left: .5rem;
+  padding-left: 20px;
 }
 
 
 .title {
   display: inline-block;
-  font-size: 25px;
+  font-size: 32px;
   font-family: 'Quicksand', 'Palatino Linotype', serif;
   color: #000;
   letter-spacing: 2px;
   font-weight: 800;
   float: left;
+  padding-left: 12px;
 }
 
 .right {
   float: right;
-  font-size: 25px;
+  font-size: 15px;
   font-family: 'Quicksand', 'Palatino Linotype', serif;
-  color: #000;
+  color: white;
   letter-spacing: 2px;
-  font-weight: 800;
-  padding-right: .5rem;
+  font-weight: 300;
+  padding-right: 10px;
+}
+
+hr {
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 2px solid #000;
+    margin: 1em 0;
+    padding: 0;
+    position: center;
+
 }

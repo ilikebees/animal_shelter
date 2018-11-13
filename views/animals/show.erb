@@ -1,6 +1,25 @@
 <div id="banner">
     <div class="content">
 
+      <br>
+      <br>
+      <br>
+
+
+      <div class="title">
+        Information
+
+      </div>
+      <br>
+      <div class="right">
+      <a href='/animals/new'>Add Animal</a>
+      </div>
+
+
+      <br>
+      <hr>
+      <br>
+
 <div class="flex">
 <img src="<%= @animal.image_path %>" alt="animal">
 
@@ -21,6 +40,11 @@
 
 <form class="" action="/animals/<%= @animal.id %>/delete" method="post">
   <input type="submit" value="DELETE">
+
 </form>
+
+<br>
+
+<br>
 </div>
 </div>
