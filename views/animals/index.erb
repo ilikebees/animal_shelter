@@ -8,9 +8,9 @@
       <p><a href='/animals/new'>Add Animal</a></p>
       <!-- <div class="container"> -->
 
-
+<div class="flex">
 <% @animals.each do |animal| %>
-
+<div class="inner_flex">
    <img src="<%= animal.image_path %>" alt="animal">
   <p><a href="/animals/<%= animal.id %>"><%= animal.format_name %></a></p>
 
@@ -18,12 +18,12 @@
   <p>Age: <%= animal.age %></p>
   <p>Sex: <%= animal.sex %></p>
   <p>Breed: <%= animal.breed %></p>
-  <p>Adoptable: <%= animal.adoptable %></p>
+  <p>Adoptable: <%= if animal.adoptable then "yes" else "no" end%></p>
 
 
-
+</div>
 <% end %>
-
+</div>
 <!-- </div> -->
 </div>
 </div>

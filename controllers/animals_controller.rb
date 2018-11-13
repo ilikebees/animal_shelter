@@ -50,5 +50,5 @@ end
 
 #HOMEPAGE
 get '/home' do
-  erb(:"/home")
+  erb :home
 end
