@@ -1,10 +1,20 @@
 <div id="banner">
     <div class="content">
 
+<div class="flex">
+<img src="<%= @animal.image_path %>" alt="animal">
+
+<div class="inner_flex">
+
 <p>Name: <%= @animal.name %></p>
 <p>Admission Date: <%= @animal.admission_date %></p>
 <p>Age: <%= @animal.age %></p>
 <p>Sex: <%= @animal.sex %></p>
+<p>Breed: <%= @animal.breed %></p>
+
+</div>
+</div>
+
 
 <p> <a href="/animals/<%= @animal.id %>/edit">EDIT</a> </p>
 
