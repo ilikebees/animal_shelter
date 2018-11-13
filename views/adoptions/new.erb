@@ -14,7 +14,9 @@
                 <p>Select an animal:</p>
                 <select name="animal_id">
                     <% for animal in @animals %>
+                    <% if animal.adoptable == 't' %>
                     <option value="<%= animal.id %>"><%= animal.name %></option>
+                    <% end %>
                     <% end %>
                 </select>
             </label>
