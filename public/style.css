@@ -151,6 +151,7 @@ table, th, td {
 
 .flex {
   display: flex;
+  flex-wrap: wrap;
 
 
 
@@ -158,5 +159,5 @@ table, th, td {
 
 .inner_flex {
 
-  
+
 }
