@@ -1,11 +1,32 @@
 <div id="banner">
     <div class="content">
 
+      <br>
+      <br>
+      <br>
+
+
+      <div class="title">
+      Customer Details
+
+      </div>
+      <br>
+      <div class="right">
+      <a href='/owners/new'>Add Customer</a>
+      </div>
+
+
+      <br>
+      <hr>
+      <br>
+
 <p>First Name: <%= @owner.first_name %></p>
 <p>Last Name: <%= @owner.last_name %></p>
 <p>Contact: <%= @owner.contact_no %></p>
 
-<p> <a href="/owners/<%= @owner.id %>/edit">EDIT</a> </p>
+<form class="" action="/owners/<%= @owner.id %>/edit" method="get">            
+            <input type="submit" value="EDIT">
+        </form>
 
 <form class="" action="/owners/<%= @owner.id %>/delete" method="post">
   <input type="submit" value="DELETE">

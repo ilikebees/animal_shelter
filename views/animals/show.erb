@@ -7,12 +7,12 @@
 
 
       <div class="title">
-        Information
+      Animal Details
 
       </div>
       <br>
       <div class="right">
-      <a href='/animals/new'>Add Animal</a>
+      <a href='/animals'>Back</a>
       </div>
 
 
@@ -36,7 +36,9 @@
 </div>
 
 
-<p> <a href="/animals/<%= @animal.id %>/edit">EDIT</a> </p>
+<form class="" action="/animals/<%= @animal.id %>/edit" method="get">
+        <input type="submit" value="EDIT">
+        </form>
 
 <form class="" action="/animals/<%= @animal.id %>/delete" method="post">
   <input type="submit" value="DELETE">
