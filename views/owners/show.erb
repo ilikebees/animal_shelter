@@ -19,11 +19,13 @@
       <br>
       <hr>
       <br>
-
+<div class="flex3">
+  <div class="inner_flex3">
 <p>First Name: <%= @owner.first_name %></p>
 <p>Last Name: <%= @owner.last_name %></p>
 <p>Contact: <%= @owner.contact_no %></p>
 
+<div class="button">
 <form class="" action="/owners/<%= @owner.id %>/edit" method="get">
             <input type="submit" value="EDIT">
         </form>
@@ -31,5 +33,9 @@
 <form class="" action="/owners/<%= @owner.id %>/delete" method="post">
   <input type="submit" value="DELETE">
 </form>
+</div>
+</div>
+</div>
+
 </div>
 </div>

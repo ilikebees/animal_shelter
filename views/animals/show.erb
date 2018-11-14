@@ -20,10 +20,10 @@
       <hr>
       <br>
 
-<div class="flex">
+<div class="flex2">
 <img src="<%= @animal.image_path %>" alt="animal">
 
-<div class="inner_flex">
+<div class="inner_flex2">
 
 <p>Name: <%= @animal.name %></p>
 <p>Admission Date: <%= @animal.admission_date %></p>
@@ -32,18 +32,31 @@
 <p>Breed: <%= @animal.breed %></p>
 <p>Adoptable: <%= if @animal.adoptable == 't' then "yes" else "no" end%></p>
 
-</div>
-</div>
-
-
+<div class="button">
+  
 <form class="" action="/animals/<%= @animal.id %>/edit" method="get">
         <input type="submit" value="EDIT">
         </form>
 
 <form class="" action="/animals/<%= @animal.id %>/delete" method="post">
   <input type="submit" value="DELETE">
+  </form>
 
-</form>
+</div>
+</div>
+
+<br>
+
+<!-- <div class="button">
+<form class="" action="/animals/<%= @animal.id %>/edit" method="get">
+        <input type="submit" value="EDIT">
+        </form>
+
+<form class="" action="/animals/<%= @animal.id %>/delete" method="post">
+  <input type="submit" value="DELETE"> -->
+
+
+</div>
 
 <br>
 
