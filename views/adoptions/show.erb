@@ -15,7 +15,7 @@
       </div>
       <br>
       <div class="right">
-      <a href='/adoptions/new'>Add Adoption</a>
+      <!-- <a href='/adoptions/new'>Add Adoption</a> -->
       </div>
 
 
@@ -25,7 +25,7 @@
       <br>
 
         <p>Animal: <%= Animal.find(@adoption.animal_id).name %></p>
-        <p>Owner: <%= Owner.find(@adoption.animal_id).first_name %> <%= Owner.find(@adoption.animal_id).last_name %></p>
+        <p>Owner: <%= Owner.find(@adoption.owner_id).first_name %> <%= Owner.find(@adoption.owner_id).last_name %></p>
         <p>Adoption date: <%= @adoption.adoption_date %></p>
 
         <!-- <form action="/adoptions/<%= @adoption.id %>/edit" method="post">

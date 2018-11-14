@@ -12,7 +12,7 @@
       </div>
       <br>
       <div class="right">
-      <a href='/owners/new'>Add Customer</a>
+      <a href="/owners">Back</a>
       </div>
 
 
@@ -24,7 +24,7 @@
 <p>Last Name: <%= @owner.last_name %></p>
 <p>Contact: <%= @owner.contact_no %></p>
 
-<form class="" action="/owners/<%= @owner.id %>/edit" method="get">            
+<form class="" action="/owners/<%= @owner.id %>/edit" method="get">
             <input type="submit" value="EDIT">
         </form>
 
