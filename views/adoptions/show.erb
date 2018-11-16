@@ -23,16 +23,24 @@
       <br>
       <hr>
       <br>
+
+
 <div class="flex3">
   <div class="inner_flex3">
+
+
         <p>Animal: <%= Animal.find(@adoption.animal_id).name %></p>
-        <p>Owner: <%= Owner.find(@adoption.owner_id).first_name %> <%= Owner.find(@adoption.owner_id).last_name %></p>
+        <p>Customer: <%= Owner.find(@adoption.owner_id).first_name %> <%= Owner.find(@adoption.owner_id).last_name %></p>
         <p>Adoption date: <%= @adoption.adoption_date %></p>
 
         <!-- <form action="/adoptions/<%= @adoption.id %>/edit" method="post">
             <input type="submit" value="EDIT">
         </form> -->
+
+
         <br>
+
+
         <form action="/adoptions/<%= @adoption.id %>/delete" method="post">
             <input type="submit" value="DELETE">
         </form>

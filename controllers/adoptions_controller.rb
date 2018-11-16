@@ -31,7 +31,6 @@ post '/adoptions' do
     # if animal adopted set animal's adoptable attribute to false
         id = params['animal_id'].to_i
         animal = Animal.find(id)
-        #binding.pry
         animal.adoptable = 'f'
         animal.update
     # save the new adoption
